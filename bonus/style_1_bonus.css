@@ -1,6 +1,5 @@
-/* display cellulare */
-@media screen and (max-width: 419px) {
-
+/* display tablet */
+@media screen and (max-width: 1000px) {
   /* impostazioni generali */
   * {
     box-sizing: border-box;
@@ -8,6 +7,50 @@
 
   .row {
     width: 100%;
+    margin-top: 75px;
+  }
+  /* BLOCCO LEZIONI */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    padding: 0 5px;
+  }
+
+  #lezioni .row img {
+    max-width: 100%;
+  }
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central {
+    margin: 0 8.5% 30px;
+  }
+
+  #steps .row>.right {
+    float: none;
+    width: 33%;
+    margin: 0 auto;
+  }
+
+  /* BLOCCO PERCHE */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 60px;
+    padding: 0 8px;
+  }
+
+  #why .row img {
+    padding: 22.5px;
+  }
+
+  /* COMMON */
+  img {
+    height: 150px;
+  }
+
+}
+@media screen and (max-width: 419px) {
+
+  .row {
     margin-top: 50px;
   }
 
@@ -31,7 +74,7 @@
   #steps .row>.right {
     float: none;
     width: 100%;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
     padding: 0 5px;
   }
 
